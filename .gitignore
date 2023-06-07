@@ -1,0 +1,5 @@
+.DS_store
+.vscode
+__pycache__
+dist
+examples/firing_pixels_filtered.fits

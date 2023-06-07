@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EPLS"
+version = "0.1.0"
+authors = [
+  { name="Aurelio Amerio", email="aurelio.amerio@ific.uv.es" },
+  { name="Francesca Calore", email=""},
+  { name="Pasquale Serpico", email=""},
+  { name="Bryan Zaldìvar", email=""}
+
+]
+description = "Code for the paper ..."
+dependencies = [
+"numpy",
+"healpy",
+"astropy",
+"numba",
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aurelio-amerio/..."
+"Bug Tracker" = "https://github.com/aurelio-amerio/.../issues"
