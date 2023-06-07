@@ -105,4 +105,4 @@ export_fits_table(filename, QF, alpha, overwrite=False, **kwargs)
 For more information about what each function does, please refer to the [docstrings](src/EPLS/EPLS.py) and help of each function.
 
 # License
-This code is released under the Zlib license. See the LICENSE file for more information.
+This code is released under the Zlib license. See the [LICENSE](LICENSE) file for more information.
