@@ -6,7 +6,7 @@ We provide our results in the form of a [precomputed FITS table](examples/firing
 # Installation
 This package can easily be installed through pip: (TODO, also we need to decide the name of the package)
 ```python
-pip install EPLS 
+pip install gPSC2
 ```
 
 # Example usage
