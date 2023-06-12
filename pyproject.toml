@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "EPLS"
+name = "gPSC2"
 version = "0.1.0"
 authors = [
   { name="Aurelio Amerio", email="aurelio.amerio@ific.uv.es" },

@@ -91,8 +91,8 @@ def get_QF_from_TS(TS, alpha):
 
     Examples
     --------
-    >>> from EPLS import EPLS
-    >>> EPLS.get_QF_from_TS(36, 0.05)
+    >>> from gPSC2 import gPSC2
+    >>> gPSC2.get_QF_from_TS(36, 0.05)
 
     """
     if alpha == 0.01:
@@ -153,8 +153,8 @@ def get_QF_ranges_from_TS(TS, alpha, batches=100, batch_size=3000):
 
     Examples
     --------
-    >>> from EPLS import EPLS
-    >>> EPLS.get_QF_ranges_from_TS(36, 0.05)
+    >>> from gPSC2 import gPSC2
+    >>> gPSC2.get_QF_ranges_from_TS(36, 0.05)
 
 
     """
@@ -198,8 +198,8 @@ def get_TS_from_QF(QF, alpha):
 
     Examples
     --------
-    >>> from EPLS import EPLS
-    >>> EPLS.get_TS_from_QF(0.50, 0.05)
+    >>> from gPSC2 import gPSC2
+    >>> gPSC2.get_TS_from_QF(0.50, 0.05)
 
     """
     if alpha == 0.01:
@@ -266,9 +266,9 @@ def get_firing_pixels(TS_lim, filter=False, conservative=False, deg=None):
 
     Examples
     --------
-    >>> from EPLS import EPLS
+    >>> from gPSC2 import gPSC2
     >>> TS_star = 36
-    >>> EPLS.get_firing_pixels(TS_star)
+    >>> gPSC2.get_firing_pixels(TS_star)
 
     """
     filter_fermi = TS_ranking_fermi >= TS_lim
@@ -335,8 +335,8 @@ def export_fits_table(filename, QF, alpha, overwrite=False, **kwargs):
 
     Examples
     --------
-    >>> from EPLS import EPLS
-    >>> EPLS.export_fits_table("test.fits", QF=0.5, alpha=[0.01, 0.05, 0.1], overwrite=True)
+    >>> from gPSC2 import gPSC2
+    >>> gPSC2.export_fits_table("test.fits", QF=0.5, alpha=[0.01, 0.05, 0.1], overwrite=True)
     >>> # read the fits file
     >>> with fits.open("fiting_pixels.fits") as f:
             print(f.info())
