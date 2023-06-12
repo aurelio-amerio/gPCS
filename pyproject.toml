@@ -12,7 +12,7 @@ authors = [
   { name="Bryan Zaldìvar", email=""}
 
 ]
-description = "Code for the paper ..."
+description = "Code for the paper Gamma-ray point-source catalogue from photon-count statistics"
 dependencies = [
 "numpy",
 "healpy",
@@ -27,5 +27,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/aurelio-amerio/..."
-"Bug Tracker" = "https://github.com/aurelio-amerio/.../issues"
+"Homepage" = "https://github.com/aurelio-amerio/gPSC2"
+"Bug Tracker" = "https://github.com/aurelio-amerio/gPSC2/issues"
