@@ -4,7 +4,7 @@ This repository contains the code for the paper **Gamma-ray point-source catalog
 We provide our results in the form of a [precomputed FITS table](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
 
 # Installation
-This package can easily be installed through pip: (TODO, also we need to decide the name of the package)
+This package can easily be installed through pip:
 ```python
 pip install gPSC2
 ```
