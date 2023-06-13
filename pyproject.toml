@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "gPSC2"
+name = "gPCS"
 version = "0.1.0"
 authors = [
   { name="Aurelio Amerio", email="aurelio.amerio@ific.uv.es" },
@@ -27,5 +27,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/aurelio-amerio/gPSC2"
-"Bug Tracker" = "https://github.com/aurelio-amerio/gPSC2/issues"
+"Homepage" = "https://github.com/aurelio-amerio/gPCS"
+"Bug Tracker" = "https://github.com/aurelio-amerio/gPCS/issues"

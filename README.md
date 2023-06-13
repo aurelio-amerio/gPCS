@@ -6,7 +6,7 @@ We provide our results in the form of a [precomputed FITS table](examples/firing
 # Installation
 This package can easily be installed through pip:
 ```python
-pip install gPSC2
+pip install gPCS
 ```
 
 # Example usage
@@ -14,35 +14,35 @@ This package can be used to obtain the firing pixels, either given a chosen TS_s
 
 ```python
 import numpy as np
-from gPSC2 import gPSC2
+from gPCS import gPCS
 
 # specify manually a TS_star
 TS_star = 36
-pixel_firing = gPSC2.get_firing_pixels(TS_star, filter=False)
+pixel_firing = gPCS.get_firing_pixels(TS_star, filter=False)
 print(len(pixel_firing))
 
 # Compute the TS_star from a chosen QF and alpha
 QF = 0.5
 alpha = 0.05
-TS_star = gPSC2.get_TS_from_QF(QF, alpha=alpha)
-pixel_firing = gPSC2.get_firing_pixels(TS_star, filter=False)
+TS_star = gPCS.get_TS_from_QF(QF, alpha=alpha)
+pixel_firing = gPCS.get_firing_pixels(TS_star, filter=False)
 print(len(pixel_firing))
 ```
 
 We can get the TS of the firing pixels:
 ```python
 TS_star=36
-firing_pixels = gPSC2.get_firing_pixels(TS_star, filter=False) 
-TS_ranking = gPSC2.TS_map_Fermi[firing_pixels]
+firing_pixels = gPCS.get_firing_pixels(TS_star, filter=False) 
+TS_ranking = gPCS.TS_map_Fermi[firing_pixels]
 ```
 
 And we can compute the QF and QF range of the firing pixels, given alpha:
 ```python
 # obtain the QF using all the simulations
-QF = gPSC2.get_QF_from_TS(TS_ranking, alpha=alpha)
+QF = gPCS.get_QF_from_TS(TS_ranking, alpha=alpha)
 
 # compute the mean and std of the QF using batches of simulations
-mean_QF, std_QF = gPSC2.get_QF_ranges_from_TS(TS_ranking, alpha=alpha, 
+mean_QF, std_QF = gPCS.get_QF_ranges_from_TS(TS_ranking, alpha=alpha, 
                             batches=100, batch_size=3000)
 
 # we can obtain the QF range for the firing pixels using the mean and std
@@ -54,19 +54,19 @@ If desired, we provide some simple functions to filter the firing pixels, for ex
 
 ```python
 # filter out the firing pixels for the 4FGL K map
-pixel_firing = gPSC2.get_firing_pixels(TS_star, filter=True)
+pixel_firing = gPCS.get_firing_pixels(TS_star, filter=True)
 # If conservative is True, after filtering the pixels in K, 
 # the routine will also filter the pixels in the 1 pixel neighborhood of the pixels in K.
-pixel_firing = gPSC2.get_firing_pixels(TS_star, filter=True, conservative=True)
+pixel_firing = gPCS.get_firing_pixels(TS_star, filter=True, conservative=True)
 # If deg is specified, the routine will also filter the pixels 
 # in the disc of radius deg centered on the centroid of the 4FGL catalog sources.
-pixel_firing = gPSC2.get_firing_pixels(TS_star, filter=True, conservative=True, deg=0.5)
+pixel_firing = gPCS.get_firing_pixels(TS_star, filter=True, conservative=True, deg=0.5)
 ```
 
 For ease of use, we provide the TS maps both for Fermi and the simualted 4FGL map ($\mathcal{K}$) as `numpy` attays. The maps are computed at `nside=512` and are stored in the following variables:
 ```python
-gPSC2.TS_map_Fermi
-gPSC2.TS_map_4FGL
+gPCS.TS_map_Fermi
+gPCS.TS_map_4FGL
 ```
 
 In order to compute the 4FGL $\mathcal{K}$ map, we use employ the `gll_psc_v30` catalog, available from the Fermi LAT colalboration [website](https://fermi.gsfc.nasa.gov/ssc/data/access/lat/12yr_catalog/).
@@ -102,7 +102,7 @@ export_fits_table(filename, QF, alpha, overwrite=False, **kwargs)
 
 - `export_fits_table(filename, QF, alpha, overwrite=False, **kwargs)`: exports the results in the form of a FITS table.
 
-For more information about what each function does, please refer to the [docstrings](src/gPSC2/gPSC2.py) and help of each function.
+For more information about what each function does, please refer to the [docstrings](src/gPCS/gPCS.py) and help of each function.
 
 # License
 This code is released under the Zlib license. See the [LICENSE](LICENSE) file for more information.
