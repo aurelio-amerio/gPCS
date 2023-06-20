@@ -1,4 +1,5 @@
 # gPCS
+![build status](https://github.com/aurelio-amerio/gPCS/workflows/python-app.yml/badge.svg)
 This repository contains the code for the paper **Gamma-ray point-source catalogue from photon-count statistics**. 
 
 We provide our results in the form of a [precomputed FITS table](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
