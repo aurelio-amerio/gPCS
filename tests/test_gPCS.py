@@ -50,7 +50,7 @@ def test_get_4FGL_source_pixels():
 def test_get_firing_pixels():
     data = np.load(f"{basepath}/files/pixel_firing.npz")
 
-    pix_firing_ref1 = np.sort(data["pixel_firing1"])
+    pix_firing_ref1 = np.sort(data["pixel_firing"])
 
     pix_firing1  = np.sort(gPCS.get_firing_pixels(36, filter=False))
 
