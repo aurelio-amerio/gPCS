@@ -40,6 +40,7 @@ It is easy to obtain the galactic coordinates of the firing pixels using healpy:
 import healpy as hp
 lon, lat = hp.pix2ang(NSIDE, firing_pixels, lonlat=True) # lon lat in degrees
 ```
+
 And we can compute the QF and QF range of the firing pixels, given alpha:
 ```python
 # obtain the QF using all the simulations
