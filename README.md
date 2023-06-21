@@ -35,7 +35,11 @@ TS_star=36
 firing_pixels = gPCS.get_firing_pixels(TS_star, filter=False) 
 TS_ranking = gPCS.TS_map_Fermi[firing_pixels]
 ```
-
+It is easy to obtain the galactic coordinates of the firing pixels using healpy:
+```python
+import healpy as hp
+lon, lat = hp.pix2ang(NSIDE, firing_pixels, lonlat=True) # lon lat in degrees
+```
 And we can compute the QF and QF range of the firing pixels, given alpha:
 ```python
 # obtain the QF using all the simulations
