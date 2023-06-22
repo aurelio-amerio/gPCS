@@ -1,4 +1,8 @@
 # gPCS
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8070852.svg)](https://doi.org/10.5281/zenodo.8070852)
+[![Downloads](https://pepy.tech/badge/gPCS)](https://pepy.tech/project/gPCS)
+[![](https://img.shields.io/pypi/v/gPCS.svg?maxAge=3600)](https://pypi.org/project/gPCS)
+
 This repository contains the code for the paper **Gamma-ray point-source catalogue from photon-count statistics**. 
 
 We provide our results in the form of a [precomputed FITS table](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
