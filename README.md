@@ -1,5 +1,5 @@
 # gPCS
-[![DOI](https://zenodo.org/badge/645335350.svg)](https://zenodo.org/badge/latestdoi/645335350)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8070852.svg)](https://doi.org/10.5281/zenodo.8070852)
 [![Downloads](https://pepy.tech/badge/gPCS)](https://pepy.tech/project/gPCS)
 [![](https://img.shields.io/pypi/v/gPCS.svg?maxAge=3600)](https://pypi.org/project/gPCS)
 
