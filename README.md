@@ -15,6 +15,7 @@ pip install gPCS
 
 # Example usage
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aurelio-amerio/gPCS/blob/main/examples/analysis.ipynb) 
+
 This package can be used to obtain the firing pixels, either given a chosen TS_star or by fixing a quality factor (QF) and significance level (alpha). 
 
 ```python
