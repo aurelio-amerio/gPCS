@@ -102,7 +102,7 @@ export_fits_table(filename, QF, alpha, overwrite=False, **kwargs)
 - QF_min : lower bound of the QF range
 - QF_max : upper bound of the QF range
 
-In order to export the FITS table available in the examples folder, we can run the command
+In order to export the FITS table available in the examples folder, we can run the command:
 ```python
 gPCS.export_fits_table(filename="firing_pixels.fits", QF=0.50, alpha=[0.01, 0.05, 0.1])
 ```
