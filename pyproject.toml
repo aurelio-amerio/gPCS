@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gPCS"
-version = "1.0.1"
+version = "1.0.2"
 authors = [
   { name="Aurelio Amerio", email="aurelio.amerio@ific.uv.es" },
   { name="Francesca Calore", email=""},
@@ -12,7 +12,7 @@ authors = [
   { name="Bryan Zaldìvar", email=""}
 
 ]
-description = "Code for the paper Gamma-ray point-source catalogue from photon-count statistics"
+description = "Code for the paper Deepening gamma-ray point-source catalogues with sub-threshold information"
 dependencies = [
 "numpy",
 "healpy",

@@ -1,11 +1,11 @@
-# gPCS
+# gPCS: Gamma-ray Photon-Counts Statistics
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8070852.svg)](https://doi.org/10.5281/zenodo.8070852)
 [![Downloads](https://pepy.tech/badge/gPCS)](https://pepy.tech/project/gPCS)
 [![](https://img.shields.io/pypi/v/gPCS.svg?maxAge=3600)](https://pypi.org/project/gPCS)
 
-This repository contains the code for the paper **Gamma-ray point-source catalogue from photon-count statistics**. 
+This repository contains the code for the paper **Deepening gamma-ray point-source catalogues with sub-threshold information**. 
 
-We provide our results in the form of a [precomputed FITS table](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
+We provide our results in the form of a [precomputed FITS](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
 
 # Installation
 This package can easily be installed through pip:
@@ -102,6 +102,10 @@ export_fits_table(filename, QF, alpha, overwrite=False, **kwargs)
 - QF_min : lower bound of the QF range
 - QF_max : upper bound of the QF range
 
+In order to export the FITS table available in the examples folder, we can run the command
+```python
+gPCS.export_fits_table(filename="firing_pixels.fits", QF=0.50, alpha=[0.01, 0.05, 0.1])
+```
 # List of functions
 - `get_QF_from_TS(TS, alpha)`: computes the quality factor from a given TS and alpha
 
