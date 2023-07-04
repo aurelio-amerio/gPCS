@@ -3,7 +3,7 @@
 [![Downloads](https://pepy.tech/badge/gPCS)](https://pepy.tech/project/gPCS)
 [![](https://img.shields.io/pypi/v/gPCS.svg?maxAge=3600)](https://pypi.org/project/gPCS)
 
-This repository contains the code for the paper **Deepening gamma-ray point-source catalogues with sub-threshold information**. 
+This repository contains the code for the paper [Deepening gamma-ray point-source catalogues with sub-threshold information](https://arxiv.org/abs/2306.16483). 
 
 We provide our results in the form of a [precomputed FITS](examples/firing_pixels.fits), as well as python package which can be used to read the data as `numpy` arrays, as well as export a similar FITS table. 
 
