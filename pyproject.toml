@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gPCS"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="Aurelio Amerio", email="aurelio.amerio@ific.uv.es" },
   { name="Francesca Calore", email=""},

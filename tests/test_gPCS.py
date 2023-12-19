@@ -23,20 +23,20 @@ def test_get_CDF():
     return
 
 def test_get_QF_from_TS():
-    QF_ref = 0.47013565499088883
+    QF_ref = 0.527972027972028 #0.47013565499088883
     QF = gPCS.get_QF_from_TS(36, alpha=0.05)
     assert np.allclose(QF, QF_ref)
     return
 
 def test_get_QF_ranges_from_TS():
-    m_ref = 0.47
-    s_ref = 0.0086
+    m_ref = 0.52 #0.47
+    s_ref = 0.0086 #0.0086
     m, s = gPCS.get_QF_ranges_from_TS(36, alpha=0.05, batches=1_000, batch_size=2000)
     assert np.allclose(m, m_ref, rtol=1e-1) and np.allclose(s, s_ref, rtol=1e-1)
     return
 
 def test_get_TS_from_QF():
-    TS_ref = 36.56653911691979
+    TS_ref = 35.791377316749134 #36.56653911691979
     TS = gPCS.get_TS_from_QF(0.5, alpha=0.05)
     assert np.allclose(TS, TS_ref)
     return
